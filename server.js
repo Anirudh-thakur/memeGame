@@ -10,12 +10,13 @@ const port = process.env.PORT || 3000;
 
 var path = require('path');
 
+app.use(express.static('public'));
 
 app.get('/', function(req, res) {
     res.sendFile(path.join(__dirname + '/index.html'));
 });
 app.get('/game1', function(req, res) {
-    res.sendFile(path.join(__dirname + '/game1.html'));
+    res.sendFile(path.join(__dirname + '/game.html'));
 });
 app.get('/game2', function(req, res) {
     res.sendFile(path.join(__dirname + '/game2.html'));
