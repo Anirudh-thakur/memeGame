@@ -21,7 +21,12 @@ app.get('/game', function(req, res) {
 app.get('/game2', function(req, res) {
     res.sendFile(path.join(__dirname + '/game2.html'));
 });
-
+app.get('/PrivacyPolicies', function(req, res) {
+    res.sendFile(path.join(__dirname + '/Privacy Policy Second sample.html'));
+});
+app.get('/TermsandConditions', function(req, res) {
+    res.sendFile(path.join(__dirname + '/Terms and Conditions second sample.html'));
+});
 
 app.listen(port);
  
